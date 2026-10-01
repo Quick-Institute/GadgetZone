@@ -8,7 +8,7 @@ export const products = [
         { id: "3", name: "K10 Ultra", price: "5000", category: "Smartwatches", 
         image: "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=500", review: "Amazing laptop!", author: "Thilina"},
 
-        { id: "4", name: "Samsung Galaxy S20", price: "50000", category: "Smartphones", 
+        { id: "4", name: "Samsung Galaxy S21", price: "50000", category: "Smartphones", 
         image: "https://images.unsplash.com/photo-1610945265064-0e34e5519bbf?w=500", review: "Amazing laptop!", author: "Thilina"},
 
         { id: "5", name: "iPhone 15", price: "180000", category: "Smartphones", 
