@@ -1,11 +1,13 @@
 "use client";
 import { useState, useMemo } from "react";
+import { useCart } from "../context/cart-context";
 import Link from "next/link";
 import { products } from "@/lib/products-data";
 
 export default function ProductsPage() {
   const [cats, setCats] = useState<string[]>([]);
   const [sort, setSort] = useState("low");
+  const { addToCart } = useCart();
 
   const toggle = (c:string) => {
     setCats(prev => prev.includes(c) ? prev.filter(x=>x!==c) : [...prev,c]);
@@ -62,8 +64,9 @@ export default function ProductsPage() {
               <p className="text-xs text-slate-400">{product.category}</p>
               <h4 className="font-bold">{product.name}</h4>
               <p className="text-blue-600 font-extrabold text-sm mt-1">Rs.{product.price}</p>
-              <Link href={"/products/" + product.id} className="w-full mt-3 bg-blue-600 text-white font-bold py-1.5 rounded text-sm text-center">View Details</Link>
-              <button className="w-full mt-2 bg-sky-500 text-white rounded py-1.5 text-sm">Add to Cart</button>
+              <Link href={"/products/" + product.id} className="w-full mt-3 bg-blue-600 text-white font-bold py-1.5 rounded text-sm 
+              text-center">View Details</Link>
+              <button onClick={()=> addToCart(product)} className="w-full mt-2 bg-sky-500 text-white rounded py-1.5 text-sm">Add to Cart</button>
             </div>
           ))}
         </div>

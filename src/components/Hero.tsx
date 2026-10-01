@@ -7,8 +7,8 @@ export default function Hero() {
                 <span className="bg-yellow-300 text-black text-xs font-bold px-4 py-1 rounded-full">NEW ARRIVAL</span>
                 <h1 className="text-4xl md:text-5xl font-black text-white mt-4 leading-tight">Next-Gen Tech<br/>
                 Arsenal</h1>
-                <p className="text-blue-100 text-sm mt-3">Order Online for fast Home Delivery or convenient
-                    <span className="font-bold text-white">Store Pickup in Colombo.</span>
+                <p className="text-blue-100 text-sm mt-3">Order Online for fast Home Delivery or convenient <span className="font-bold 
+                text-white"> Store Pickup in Colombo.</span>
                 </p>
                 <div className="flex items-center gap-4 mt-6">
                     <Link href="/products" className="bg-yellow-500 hover:bg-orange-400 text-black font-bold px-6 py-3 rounded-lg

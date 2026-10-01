@@ -79,7 +79,7 @@ export default function Home() {
   </div>
 
   <div className="grid md:grid-cols-3 gap-4 mt-6">
-    <div className="bg-slate-900 text-white p-5 rounded-2xl"><p className="font-bold">📦 Store Pickup</p><p className="text-xs opacity-70 mt-1">Kurunegala same-day pickup</p></div>
+    <div className="bg-blue-900 text-white p-5 rounded-2xl"><p className="font-bold">📦 Store Pickup</p><p className="text-xs opacity-70 mt-1">Kurunegala same-day pickup</p></div>
     <div className="bg-slate-900 text-white p-5 rounded-2xl"><p className="font-bold">🔒 Secure Payments</p><p className="text-xs opacity-70 mt-1">Trusted by 18k+ customers</p></div>
     <div className="bg-yellow-400 text-black p-5 rounded-2xl"><p className="font-bold">🎁 100% Genuine</p><p className="text-xs mt-1">Original with company warranty</p></div>
   </div>

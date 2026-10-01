@@ -82,7 +82,7 @@ export default function Navbar() {
 
         <div className="flex items-center gap-4">
           <Link href="/cart" className="text-white text-sm flex items-center gap-1">
-            <ShoppingCart size={18} /> Cart ({cartCount || 2})
+            <ShoppingCart size={18} /> Cart ({cartCount})
           </Link>
           <Link href="/login" className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-1.5 rounded-md text-sm font-bold">
             Account
